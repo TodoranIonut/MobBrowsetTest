@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="suite 2" verbose="1">
+	<parameter name="app" value="Softvision" />
+	<parameter name="platform" value="Mobile" />
+	<test name="Regression suite 1">
+		<classes>
+			<class name="Test.Softvision.ContactTest">
+				<methods>
+					<include name="testContact"></include>
+				</methods>
+			</class>
+			<class name="Test.Softvision.MenuButtonTest">
+				<methods>
+					<include name="testMenuButtons"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

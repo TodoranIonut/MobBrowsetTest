@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="suite 1" verbose="1">
+<parameter name = "app" value = "Automation Practice"/>
+<parameter name = "platform" value = "Desktop"/>
+	<test name="Regression suite 1">
+		<classes>
+			<class name="Test.Automation.ContactUsTest">
+				<methods>
+					<include name="testContactUs"></include>
+				</methods>
+			</class>
+			<class name="Test.Automation.LogInTest">
+				<methods>
+					<include name="testLogIn"></include>
+				</methods>
+			</class>
+			<class name="Test.Automation.CartTest">
+				<methods>
+					<include name="testCart"></include>
+				</methods>
+			</class>
+			<class name="Test.Automation.SearchTest">
+				<methods>
+					<include name="testSearch"></include>
+				</methods>
+			</class>
+			<class name="Test.Automation.HomeTest">
+				<methods>
+					<include name="testHome"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

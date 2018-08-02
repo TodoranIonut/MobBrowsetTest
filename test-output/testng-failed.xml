@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite 2]">
+  <parameter name="app" value="Softvision"/>
+  <parameter name="platform" value="Mobile"/>
+  <test thread-count="5" name="Regression suite 1(failed)">
+    <classes>
+      <class name="Test.Softvision.ContactTest">
+        <methods>
+          <include name="initSet"/>
+          <include name="testContact"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Test.Softvision.ContactTest -->
+      <class name="Test.Softvision.MenuButtonTest">
+        <methods>
+          <include name="initSet"/>
+          <include name="testMenuButtons"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Test.Softvision.MenuButtonTest -->
+    </classes>
+  </test> <!-- Regression suite 1(failed) -->
+</suite> <!-- Failed suite [suite 2] -->
